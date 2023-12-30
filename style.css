@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display:block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background-color: chocolate;
+    border-radius: 3px;
+}
+nav{
+    background-color: blueviolet;
+    height: 70px;
+}
+
+nav ul{
+    display: flex;
+    height: inherit;
+    text-align: left;
+    align-items: center;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li ul {
+    position: absolute;
+    background-color: gray;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+    display: none;
+}
+nav ul li:hover>ul{
+    display: block;
+}
+nav ul li ul li {
+    width: 100%;
+    position: relative;
+}
+
+nav ul li ul li:hover>a{
+    background-color: black;
+    display: block;
+    width: 100%;
+}
+
+/* second drop down */
+nav ul li ul li ul{
+    position: absolute;
+    left: 120px;
+    top:0px;
+}
